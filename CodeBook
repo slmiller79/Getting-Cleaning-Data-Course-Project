@@ -1,0 +1,31 @@
+**Code Book**
+
+This code book summarizes the results reported in the `tidy.txt` data in this repository.
+
+
+
+*   `README.txt` describes the process of how publishers of URI HAR dataset did the experiment and got the data result.
+*   The project uses six inputs from the URI HAR Dataset  
+    *   `x_train.txt` 
+    *   `x_test.txt`
+    *   `y_train.txt`
+    *   `y_test.txt`
+    *   `subject_train.txt`
+    *   `subject_test.txt`.
+*   The training and test sets were merged extracting only mean and std to create new data sets features and activity_labels
+*   `features.txt` contains variable names corresponding to the columns of `x_train.txt` and `x_test.txt`. 
+    *   Descriptive Variable Names
+        1. `Accelerometer` 
+        2. `Gyroscope`
+        3. `Magnitude`
+        4. `Frequency`
+        5. `Mean`
+        6. `StandardDeviation` 
+*   `activity_labels.txt` contains the descriptive names for the activity labels from the numbers in `y_train.txt` and `y_test.txt`.
+    *   Descriptive Activity Labels
+        7. WALKING - subject was walking during the test
+        8. WALKING_UPSTAIRS - subject was walking up a staircase during the test
+        9. WALKING_DOWNSTAIRS - subject was walking down a staircase during the test
+        10. SITTING - subject was sitting during the test
+        11. STANDING - subject was standing during the test
+        12. LAYING - subject was laying down during the test
